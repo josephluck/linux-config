@@ -168,9 +168,8 @@ bar {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec /usr/bin/amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec /usr/bin/amixer -D pulse sset Master 5%-
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec bright up # increase screen brightness
@@ -183,5 +182,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start up items
-
 exec --no-startup-id nm-applet

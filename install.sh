@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Update repositories
+# Update core repositories
 sudo apt-get update &&
 
 sudo apt-get install curl &&
@@ -20,7 +20,7 @@ sudo apt-get --allow-unauthenticated install sur5r-keyring &&
 sudo apt-get update &&
 
 # Install packages
-sudo apt-get install -y nodejs git code i3 gksu`` &&
+sudo apt-get install -y nodejs git code i3 gksu amixer pulseaudio powertop &&
 
 # Clean up
 sudo apt autoremove &&

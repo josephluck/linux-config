@@ -1,6 +1,6 @@
 # Bootstrap & Config Linux
 
-### Install i3
+### Install i3wm
 
 ```bash
 sudo -i
@@ -10,10 +10,15 @@ logout
 
 ### Add hardware controls
 1. Copy the bright shell script to local bin
-`cp ./bright /usr/local/bin/bright`
+```bash
+cp ./bright /usr/local/bin/bright`
+```
 
 2. Add the following to your /etc/sudoers:
-`<username> ALL=NOPASSWD: /usr/local/bin/bright`
+```bash
+sudo nano /etc/sudoers
+<username> ALL=NOPASSWD: /usr/local/bin/bright`
+```
 
 ### Install packages
 
@@ -29,11 +34,12 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 cat ~/.ssh/id_rsa.pub
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
+ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 ```
 
 Copy terminal output to github ssh settings
 
-### Fixup backlight
+### Fix backlight
 
 ```bash
 sudo nano /etc/default/grub
@@ -80,3 +86,25 @@ ResultActive=yes
 ```bash
 reboot
 ```
+
+### Extras
+
+#### Better Battery 
+
+```bash
+sudo apt-get update
+sudo apt-get install powertop
+```
+
+Use the battery for a while... 30 mins should do
+
+```bash
+powertop autotune
+```
+
+#### Clean up dependencies
+
+```bash
+sudo apt-get auto-remove
+```
+
