@@ -43,7 +43,7 @@ rm -rf ~/.i3 && mkdir ~/.i3 && cp ./config ~/.i3/config &&
 
 # Bumblebee status
 git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
-cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status
+sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status &&
 
 # Copy media key scripts to local bin
 cp ./bright /usr/local/bin/bright &&

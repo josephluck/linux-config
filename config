@@ -194,7 +194,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   #status_command i3status
-  status_command ~/.i3/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t default
+  status_command ~/.i3/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink -p root.path=/home time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t default
   font pango: System San Francisco Display, FontAwesome 8
   position bottom
   strip_workspace_numbers yes
