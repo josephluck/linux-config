@@ -8,13 +8,9 @@ echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt
 logout
 ```
 
-### Add hardware controls
-1. Copy the bright shell script to local bin
-```bash
-cp ./bright /usr/local/bin/bright`
-```
+### Add hardware controls permissions
 
-2. Add the following to your /etc/sudoers:
+Add the following to your /etc/sudoers:
 ```bash
 sudo nano /etc/sudoers
 <username> ALL=NOPASSWD: /usr/local/bin/bright`
