@@ -65,6 +65,7 @@ EndSection
 ### Fixup suspend on lid close
 
 ```bash
+# echo XHC1 > /proc/acpi/wakeup
 gksudo gedit /var/lib/polkit-1/localauthority/50-local.d/hibernate.pkla
 ```
 

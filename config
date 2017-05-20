@@ -158,36 +158,36 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+  # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym $left       resize shrink width 10 px or 10 ppt
+  bindsym $down       resize grow height 10 px or 10 ppt
+  bindsym $up         resize shrink height 10 px or 10 ppt
+  bindsym $right      resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+  # same bindings, but for the arrow keys
+  bindsym Left        resize shrink width 10 px or 10 ppt
+  bindsym Down        resize grow height 10 px or 10 ppt
+  bindsym Up          resize shrink height 10 px or 10 ppt
+  bindsym Right       resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
 
 # Window Colours
-#                         border  background text    indicator
-  client.focused          $base01 $base01    $base07 $base0F
-  client.focused_inactive $base02 $base02    $base03 $base0F
-  client.unfocused        $base02 $base02    $base03 $base0F
-  client.urgent           $base02 $base08    $base00 $base0F
+#                       border  background text    indicator
+client.focused          $base01 $base01    $base07 $base0F
+client.focused_inactive $base02 $base02    $base03 $base0F
+client.unfocused        $base02 $base02    $base03 $base0F
+client.urgent           $base02 $base08    $base00 $base0F
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -227,6 +227,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start up items
-exec_always feh --bg-scale ~/.i3/wallpaper.jpg
+exec_always feh --bg-scale ~/.i3/wallpaper.jpeg
+# exec_always --no-startup-id xsetroot -solid "#000000"
 exec --no-startup-id nm-applet
 exec_always compton -f -D 3

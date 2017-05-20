@@ -23,14 +23,13 @@ sudo apt-key add - < Release.key &&
 rm -rf Release.key &&
 
 # Moka icons
-sudo add-apt-repository ppa:moka/daily &&
-
+sudo add-apt-repository ppa:moka/stable &&
 
 # Update repositories
 sudo apt-get update &&
 
 # Install packages
-sudo apt-get install -y nodejs git code i3 gksu amixer pulseaudio powertop feh arandr python-requests lxappearance arc-theme moka-icon-theme &&
+sudo apt-get install -y nodejs git code i3 gksu pulseaudio powertop feh arandr python-requests lxappearance arc-theme moka-icon-theme sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo &&
 sudo apt-get install gcc python-dev python-pip &&
 pip install netifaces && pip install psutil
 
@@ -48,8 +47,9 @@ sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-stat
 # Copy media key scripts to local bin
 cp ./bright /usr/local/bin/bright &&
 
+# Copy wallpaper
+sudo cp ./wallpaper.jpeg ~/.i3/wallpaper.jpeg &&
+
 # Clean up
 sudo apt autoremove &&
-rm -rf YosemiteSanFranciscoFont &&
-
-echo "Done! You'll need to reboot"
+rm -rf YosemiteSanFranciscoFont
