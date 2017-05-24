@@ -35,7 +35,15 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
 Copy terminal output to github ssh settings
 
-### Fix backlight
+### Reboot
+
+```bash
+reboot
+```
+
+### Extras
+
+#### Fix backlight
 
 ```bash
 sudo nano /etc/default/grub
@@ -62,7 +70,7 @@ Section "Device"
 EndSection
 ```
 
-### Fixup suspend on lid close
+#### Fixup suspend on lid close
 
 ```bash
 # echo XHC1 > /proc/acpi/wakeup
@@ -77,14 +85,6 @@ Identity=unix-user:*
 Action=org.freedesktop.upower.hibernate
 ResultActive=yes
 ```
-
-### Reboot
-
-```bash
-reboot
-```
-
-### Extras
 
 #### Better Battery 
 
