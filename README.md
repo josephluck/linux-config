@@ -99,6 +99,20 @@ Use the battery for a while... 30 mins should do
 powertop autotune
 ```
 
+### Better font rendering
+
+```bash
+sudo bash /etc/fonts/infinality/infctl.sh setstyle
+```
+
+I find that OSX2 works best. You can also:
+
+```bash
+sudo nano /etc/profile.d/infinality-settings.sh
+```
+
+Find the line `USE_STYLE` and replace `DEFAULT` with `OSX`
+
 #### Clean up dependencies
 
 ```bash
