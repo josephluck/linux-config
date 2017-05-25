@@ -65,6 +65,7 @@ sudo apt-get install -y gcc &&
 sudo apt-get install -y python-dev &&
 sudo apt-get install -y python-pip &&
 sudo apt-get install -y fontconfig-infinality &&
+sudo apt-get install -y thunar &&
 pip install netifaces && pip install psutil &&
 
 # Update repositories
