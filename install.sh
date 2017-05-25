@@ -73,6 +73,7 @@ sudo apt-get upgrade &&
 # Get fonts
 git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git &&
 cp -v YosemiteSanFranciscoFont/*.ttf /usr/share/fonts &&
+cp -v -r ./fonts/apercu/*.ttf /usr/share/fonts &&
 rm -rf YosemiteSanFranciscoFont &&
 sudo wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf &&
 cp -v Monaco_Linux.ttf /usr/share/fonts &&
