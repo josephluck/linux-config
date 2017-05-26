@@ -37,24 +37,27 @@ sudo add-apt-repository ppa:no1wantdthisname/ppa &&
 sudo apt-get update &&
 
 # Install packages
-sudo apt-get install -y sudo apt-get install -y nodejs &&
+# Terminal
+sudo apt-get install -y nodejs &&
 sudo apt-get install -y git &&
-sudo apt-get install -y code &&
+sudo apt-get install -y zsh &&
+# Applications
 sudo apt-get install -y i3 &&
 sudo apt-get install -y spotify-client &&
+sudo apt-get install -y code &&
+sudo apt-get install -y thunar &&
 sudo apt-get install -y gksu &&
-sudo apt-get install -y pulseaudio &&
-sudo apt-get install -y powertop &&
 sudo apt-get install -y feh &&
 sudo apt-get install -y arandr &&
+sudo apt-get install -y ranger &&
+# Appearance
 sudo apt-get install -y python-requests &&
-sudo apt-get install -y lxappearance &&
 sudo apt-get install -y arc-theme &&
 sudo apt-get install -y moka-icon-theme &&
-sudo apt-get install -y sudo &&
-sudo apt-get install -y apt-get &&
+sudo apt-get install -y fontconfig-infinality &&
+sudo apt-get install -y lxappearance &&
+# Misc
 sudo apt-get install -y install &&
-sudo apt-get install -y ranger &&
 sudo apt-get install -y caca-utils &&
 sudo apt-get install -y highlight &&
 sudo apt-get install -y atool &&
@@ -62,18 +65,25 @@ sudo apt-get install -y w3m &&
 sudo apt-get install -y poppler-utils &&
 sudo apt-get install -y mediainfo &&
 sudo apt-get install -y gcc &&
+# Hardware
+sudo apt-get install -y pulseaudio &&
+sudo apt-get install -y powertop &&
+sudo apt-get install -y xfce4-power-manager &&
+sudo apt-get install -y xfce4-settings &&
+sudo apt-get install -y xfce4-volumed &&
+
+# Bumblebee status related items
 sudo apt-get install -y python-dev &&
 sudo apt-get install -y python-pip &&
-sudo apt-get install -y fontconfig-infinality &&
-sudo apt-get install -y thunar &&
 pip install netifaces && pip install psutil &&
 
 # Update repositories
 sudo apt-get upgrade &&
 
+# Bumblebee status
+git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
+
 # Get fonts
-git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git &&
-cp -v YosemiteSanFranciscoFont/*.ttf /usr/share/fonts &&
 cp -v -r ./fonts/apercu/*.ttf /usr/share/fonts &&
 rm -rf YosemiteSanFranciscoFont &&
 sudo wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf &&
@@ -82,10 +92,10 @@ rm Monaco_Linux.ttf &&
 
 # Copy configs
 rm -rf ~/.i3 && mkdir ~/.i3 && cp ./config ~/.i3/config &&
-
-# Bumblebee status
-git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
 sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status &&
+
+# oh my zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh &&
 
 # Copy media key scripts to local bin
 cp ./bright /usr/local/bin/bright &&

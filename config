@@ -212,25 +212,21 @@ bar {
   }
 }
 
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec /usr/bin/amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec /usr/bin/amixer -D pulse sset Master 5%-
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec bright up # increase screen brightness
-bindsym XF86MonBrightnessDown exec bright down # decrease screen brightness
-
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Screenshot
+# Print screen
 bindsym $mod+Shift+p exec --no-startup-id scrot
 
 # Start up items
+exec --no-startup-id /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+exec --no-startup-id xfsettingsd
+exec --no-startup-id xfce4-power-manager # if desired - handles brightness keys, as well as other power stuff
+exec --no-startup-id xfce4-volumed # if desired - handles volume keys
+
 exec_always feh --bg-scale ~/.i3/wallpaper.jpeg
-# exec_always --no-startup-id xsetroot -solid "#000000"
 exec --no-startup-id nm-applet
 exec_always compton -f -D 3

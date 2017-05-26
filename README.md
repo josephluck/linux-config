@@ -23,6 +23,11 @@ chmod +x ./install.sh
 sudo ./install.sh
 ```
 
+### Apply oh my zsh
+```bash
+chsh -s `which zsh` &&
+```
+
 ### Generate SSH key for git
 
 ```bash
