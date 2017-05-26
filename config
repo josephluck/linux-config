@@ -224,9 +224,11 @@ bindsym $mod+Shift+p exec --no-startup-id scrot
 # Start up items
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
 exec --no-startup-id xfsettingsd
-exec --no-startup-id xfce4-power-manager # if desired - handles brightness keys, as well as other power stuff
-exec --no-startup-id xfce4-volumed # if desired - handles volume keys
+exec --no-startup-id xfce4-power-manager # handles brightness keys, as well as other power stuff
+exec --no-startup-id xfce4-volumed #  handles volume keys
 
 exec_always feh --bg-scale ~/.i3/wallpaper.jpeg
+exec_always gnome-terminal
+exec_always google-chrome
 exec --no-startup-id nm-applet
 exec_always compton -f -D 3
