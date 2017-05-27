@@ -49,7 +49,6 @@ sudo apt-get install -y ranger &&
 # Appearance
 sudo apt-get install -y python-requests &&
 sudo apt-get install -y arc-theme &&
-sudo apt-get install -y moka-icon-theme &&
 sudo apt-get install -y fontconfig-infinality &&
 sudo apt-get install -y lxappearance &&
 # Misc
