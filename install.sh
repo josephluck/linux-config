@@ -63,10 +63,9 @@ sudo apt-get install -y xfce4-volumed &&
 # git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
 
 # Get fonts
-cp -v -r ./fonts/apercu/*.ttf /usr/share/fonts &&
-rm -rf YosemiteSanFranciscoFont &&
-sudo wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf &&
-cp -v Monaco_Linux.ttf /usr/share/fonts &&
+sudo cp -v -r ./fonts/apercu/*.ttf /usr/share/fonts &&
+wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf &&
+sudo cp -v Monaco_Linux.ttf /usr/share/fonts &&
 rm Monaco_Linux.ttf &&
 
 # Copy configs
