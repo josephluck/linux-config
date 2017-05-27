@@ -52,15 +52,6 @@ sudo apt-get install -y python-requests &&
 sudo apt-get install -y arc-theme &&
 # sudo apt-get install -y fontconfig-infinality &&
 sudo apt-get install -y lxappearance &&
-# Misc
-sudo apt-get install -y install &&
-sudo apt-get install -y caca-utils &&
-sudo apt-get install -y highlight &&
-sudo apt-get install -y atool &&
-sudo apt-get install -y w3m &&
-sudo apt-get install -y poppler-utils &&
-sudo apt-get install -y mediainfo &&
-sudo apt-get install -y gcc &&
 # Hardware
 sudo apt-get install -y pulseaudio &&
 sudo apt-get install -y powertop &&
@@ -68,13 +59,8 @@ sudo apt-get install -y xfce4-power-manager &&
 sudo apt-get install -y xfce4-settings &&
 sudo apt-get install -y xfce4-volumed &&
 
-# Bumblebee status related items
-sudo apt-get install -y python-dev &&
-sudo apt-get install -y python-pip &&
-pip install netifaces && pip install psutil &&
-
 # Bumblebee status
-git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
+# git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
 
 # Get fonts
 cp -v -r ./fonts/apercu/*.ttf /usr/share/fonts &&
@@ -85,7 +71,7 @@ rm Monaco_Linux.ttf &&
 
 # Copy configs
 rm -rf ~/.i3 && mkdir ~/.i3 && cp ./config ~/.i3/config &&
-sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status &&
+# sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status &&
 
 # oh my zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh &&
