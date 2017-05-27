@@ -10,10 +10,10 @@ sudo apt-get install -y git-core git
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-cat ~/.ssh/id_rsa.pub
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+cat ~/.ssh/id_rsa.pub
 ```
 
 Copy terminal output to github ssh settings
