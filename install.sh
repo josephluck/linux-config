@@ -27,6 +27,12 @@ rm -rf Release.key &&
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 &&
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list &&
 
+# Pick (color picker)
+sudo add-apt-repository ppa:sil/pick &&
+
+# Compton
+sudo apt-add-repository ppa:richardgv/compton &&
+
 # Better font rendering
 # sudo add-apt-repository ppa:no1wantdthisname/ppa &&
 
@@ -40,6 +46,8 @@ sudo apt-get install -y nodejs &&
 sudo apt-get install -y zsh &&
 # Applications
 sudo apt-get install -y i3 &&
+# sudo apt-get install -y rofi &&
+sudo apt-get install -y chromium-browser &&
 sudo apt-get install -y spotify-client &&
 sudo apt-get install -y code &&
 sudo apt-get install -y thunar &&
@@ -47,9 +55,11 @@ sudo apt-get install -y gksu &&
 sudo apt-get install -y feh &&
 sudo apt-get install -y arandr &&
 sudo apt-get install -y ranger &&
+sudo apt-get install -y pick-colour-picker &&
 # Appearance
 sudo apt-get install -y python-requests &&
 sudo apt-get install -y arc-theme &&
+sudo apt-get install -y compton &&
 # sudo apt-get install -y fontconfig-infinality &&
 sudo apt-get install -y lxappearance &&
 # Hardware
@@ -69,7 +79,9 @@ sudo cp -v Monaco_Linux.ttf /usr/share/fonts &&
 rm Monaco_Linux.ttf &&
 
 # Copy configs
-rm -rf ~/.i3 && mkdir ~/.i3 && cp ./config ~/.i3/config &&
+rm -rf ~/.i3 && mkdir ~/.i3 &&
+cp ./config ~/.i3/config &&
+cp ./i3status.conf ~/.i3/i3status.conf &&
 # sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-status &&
 
 # oh my zsh
@@ -77,3 +89,7 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 # Clean up
 sudo apt autoremove
+
+echo "Done, you'll need to log out and in again. Enjoy!"
+
+exit

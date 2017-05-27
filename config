@@ -12,8 +12,8 @@
 set $mod Mod4
 
 set $base00 #101218
-set $base01 #1f222d
-set $base02 #252936
+set $base01 #2f2f2f
+set $base02 #333333
 set $base03 #7780a1
 set $base04 #C0C5CE
 set $base05 #d1d4e0
@@ -32,6 +32,9 @@ set $base0F #fcc09e
 # is used in the bar {} block below.
 # font pango:monospace 8
 font pango:Apercu Light 10
+
+# Hide Borders
+hide_edge_borders both
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -61,8 +64,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 300 -opacity "90" -bw 0 -bc "$base01" -bg "$base02" -fg "$base07" -hlbg "$base05" -columns 2 -font "System San Francisco Display 18" -hlfg "#9575cd"
+bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -193,7 +195,7 @@ client.urgent           $base02 $base08    $base00 $base0F
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command i3status
+  status_command i3status -c ~/.i3/i3status.conf
   #status_command ~/.i3/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery date time pasink -p root.path=/home time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t default
   font pango: System San Francisco Display, FontAwesome 8
   position bottom
@@ -227,8 +229,7 @@ exec --no-startup-id xfsettingsd
 exec --no-startup-id xfce4-power-manager # handles brightness keys, as well as other power stuff
 exec --no-startup-id xfce4-volumed #  handles volume keys
 
-exec_always feh --bg-scale ~/.i3/wallpaper.jpeg
-exec_always gnome-terminal
-exec_always google-chrome
+exec gnome-terminal
+exec chromium-browser
 exec --no-startup-id nm-applet
 exec_always compton -f -D 3

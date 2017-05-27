@@ -13,10 +13,13 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+git config --global user.email "your email" && git config --global user.name "your name"
 cat ~/.ssh/id_rsa.pub
 ```
 
 Copy terminal output to github ssh settings
+
+
 
 ### Clone this package
 
