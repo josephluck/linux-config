@@ -27,9 +27,6 @@ rm -rf Release.key &&
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 &&
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list &&
 
-# Moka icons
-sudo add-apt-repository ppa:moka/stable &&
-
 # Better font rendering
 sudo add-apt-repository ppa:no1wantdthisname/ppa &&
 
