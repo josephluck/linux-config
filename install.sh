@@ -32,6 +32,7 @@ sudo add-apt-repository ppa:no1wantdthisname/ppa &&
 
 # Update repositories
 sudo apt-get update &&
+sudo apt-get upgrade &&
 
 # Install packages
 # Terminal
@@ -72,9 +73,6 @@ sudo apt-get install -y python-dev &&
 sudo apt-get install -y python-pip &&
 pip install netifaces && pip install psutil &&
 
-# Update repositories
-sudo apt-get upgrade &&
-
 # Bumblebee status
 git clone git://github.com/tobi-wan-kenobi/bumblebee-status &&
 
@@ -91,12 +89,6 @@ sudo cp -rf ./bumblebee-status ~/.i3/bumblebee-status && rm -rf ./bumblebee-stat
 
 # oh my zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh &&
-
-# Copy media key scripts to local bin
-cp ./bright /usr/local/bin/bright &&
-
-# Copy wallpaper
-sudo cp ./wallpaper.jpeg ~/.i3/wallpaper.jpeg &&
 
 # Clean up
 sudo apt autoremove
