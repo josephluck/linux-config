@@ -39,7 +39,6 @@ sudo apt-get update &&
 # Install packages
 # Terminal
 sudo apt-get install -y nodejs &&
-sudo apt-get install -y git &&
 sudo apt-get install -y zsh &&
 # Applications
 sudo apt-get install -y i3 &&
