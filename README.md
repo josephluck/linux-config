@@ -49,6 +49,13 @@ sudo ./install.sh
 chsh -s `which zsh`
 ```
 
+### Apply theme
+
+Run `xfce4-appearance-settings`
+Choose `arc-darker` as your theme
+Choose `Apercu Light 10` as the font
+Adjust the DPI according to your needs 
+
 ### Reboot
 
 ```bash
