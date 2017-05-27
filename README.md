@@ -1,31 +1,9 @@
-# Bootstrap & Config Linux
+# Bootstrap & Linux Dotfiles
 
-### Install i3wm
-
-```bash
-sudo -i
-echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list
-logout
-```
-
-### Add hardware controls permissions
-
-Add the following to your /etc/sudoers:
-```bash
-sudo nano /etc/sudoers
-<username> ALL=NOPASSWD: /usr/local/bin/bright`
-```
-
-### Install packages
+### Install git
 
 ```bash
-chmod +x ./install.sh
-sudo ./install.sh
-```
-
-### Apply oh my zsh
-```bash
-chsh -s `which zsh`
+sudo apt-get install -y git-core git
 ```
 
 ### Generate SSH key for git
@@ -40,13 +18,43 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
 Copy terminal output to github ssh settings
 
+### Clone this package
+
+```bash
+cd the-directory-you-want-your-code-to-live
+git clone git@github.com:josephluck/linux-config.git
+cd linux-config
+```
+
+### Install i3wm
+
+```bash
+sudo -i
+echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list
+logout
+```
+
+### Install packages
+
+```bash
+chmod +x ./install.sh
+sudo ./install.sh
+```
+
+### Apply oh my zsh
+```bash
+chsh -s `which zsh`
+```
+
 ### Reboot
 
 ```bash
 reboot
 ```
 
-### Extras
+### Optional Extras
+
+I'd suggest you try out your installation before proceeding with the following.
 
 #### Fix backlight
 
