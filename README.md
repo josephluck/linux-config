@@ -64,10 +64,15 @@ Adjust the DPI according to your needs.
 reboot
 ```
 
-### Tools
+### Included Tools
 
-`ranger` - CLI file explorer
-`arandr` - Screen layout editor GUI
+- `ranger` - CLI file explorer
+- `arandr` - Screen layout editor GUI
+
+### Useful (but not included tools)
+
+- `cronopete` - Backup manager
+- `pulseaudio` - Audio device manager
 
 #### Clean up dependencies
 
