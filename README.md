@@ -75,6 +75,7 @@ reboot
 - `cronopete` - Backup manager
 - `pulseaudio` - Audio device manager
 - `scrot` - For taking screenshots
+- `playerctl` Control audio from hardware buttons (fn keys)
 
 #### Clean up dependencies
 
