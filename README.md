@@ -52,6 +52,7 @@ chsh -s `which zsh`
 - `config` is the i3 config... `cp config ~/.config/i3/config`
 - `i3status.conf` should go `cp i3status.conf ~/.config/i3/i3status.conf`
 - `compton` is the compton config, `cp compton ~/.config/compton/config`
+- `screen.sh` is a tool for positioning a connected monitor to above the laptop. `cmd+shift+u` to move a workspace up, `cmd+shift+d` to move a workspace down
 
 ### Adjust theming / DPI
 
@@ -73,6 +74,7 @@ reboot
 
 - `cronopete` - Backup manager
 - `pulseaudio` - Audio device manager
+- `scrot` - For taking screenshots
 
 #### Clean up dependencies
 
