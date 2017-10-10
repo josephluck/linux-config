@@ -57,7 +57,7 @@ chsh -s `which zsh`
 ### Adjust theming / DPI
 
 Run `xfce4-appearance-settings`
-Adjust the DPI according to your needs.
+Adjust the DPI according to your needs. 96 is good for MBP, resolution-wise, 1920x1200 seems to work well.
 
 ### Reboot
 
