@@ -52,6 +52,7 @@ chsh -s `which zsh`
 - `config` is the i3 config... `cp config ~/.config/i3/config`
 - `i3status.conf` should go `cp i3status.conf ~/.config/i3/i3status.conf`
 - `compton` is the compton config, `cp compton ~/.config/compton/config`
+- `rc.conf` is the ranger config, copy it to `cp rc.conf ~/.config/ranger/rc.conf` if you install ranger
 - `screen.sh` is a tool for positioning a connected monitor to above the laptop. `cmd+shift+u` to move a workspace up, `cmd+shift+d` to move a workspace down
 
 ### Adjust theming / DPI
