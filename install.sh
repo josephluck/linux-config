@@ -19,6 +19,7 @@ sudo apt-get install -y powertop &&
 sudo apt-get install -y xfce4-power-manager &&
 sudo apt-get install -y xfce4-settings &&
 sudo apt-get install -y xfce4-volumed &&
+sudo apt-get install -y maim slop &&
 
 # VS code
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg &&
