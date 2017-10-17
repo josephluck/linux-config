@@ -226,6 +226,9 @@ exec --no-startup-id nm-applet
 # backups
 exec --no-startup-id cronopete
 
+# auto mount external drives
+exec --no-startup-id Thunar --deamon
+
 # xrandr for screen above laptop
 exec_always ~/.config/i3/screen.sh
 
