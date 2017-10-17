@@ -39,7 +39,7 @@ logout
 
 ### Install packages
 
-Take a look at `./install.sh` and install all the things!
+Take a look at `./install.sh` and install all the things! You can try running the command, but it's probably worth just copy and pasting in the bits you want.
 
 ### Apply oh my zsh
 
@@ -51,7 +51,7 @@ chsh -s `which zsh`
 
 - `config` is the i3 config... `cp config ~/.config/i3/config`
 - `i3status.conf` should go `cp i3status.conf ~/.config/i3/i3status.conf`
-- `compton` is the compton config, `cp compton ~/.config/compton/config`
+- `compton` is the compton compositor config, `cp compton ~/.config/compton/config`
 - `rc.conf` is the ranger config, copy it to `cp rc.conf ~/.config/ranger/rc.conf` if you install ranger
 - `screen.sh` is a tool for positioning a connected monitor to above the laptop. `cmd+shift+u` to move a workspace up, `cmd+shift+d` to move a workspace down
 
@@ -70,14 +70,13 @@ reboot
 
 - `ranger` - CLI file explorer
 - `arandr` - Screen layout editor GUI
+- `maim` - Screenshot tool. `cmd+shift+p` to take a shot, you can select a window or drag with the mouse to select a region. Images are stored in `~/Pictures`
 
 ### Useful (but not included tools)
 
 - `cronopete` - Backup manager
 - `pulseaudio` - Audio device manager
-- `scrot` - For taking screenshots
 - `playerctl` Control audio from hardware buttons (fn keys)
-- `maim` - Better screenshots tool. See `shot.sh` for some helpful scripts
 
 #### Clean up dependencies
 
