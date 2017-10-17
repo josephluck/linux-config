@@ -1,5 +1,16 @@
 # Bootstrap & Linux Dotfiles
 
+This repository does the following
+
+- Installs common useful packages (i3wm, compton, ranger, xfce4, thunar etc, check `./install.sh` for the list)
+- Sets up i3wm configuration keybindings. See `./config` for more info
+- Sets up custom keybindings for scripts such as a lock screen with `cmd+shift+l` and screenshots with `cmd+shift+p`
+- Contains configuration files for other useful programs (i.e. `ranger`, `compton` etc)
+- Daemon for auto mounting external drives
+- Daemon for managing hardware keys including brightness and volume controls
+- Instructions for setting up things like `git` and `oh my zsh`
+- Barebones documentation for general day-to-day running of the machine
+
 ### Install git
 
 ```bash
