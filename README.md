@@ -77,6 +77,7 @@ reboot
 - `pulseaudio` - Audio device manager
 - `scrot` - For taking screenshots
 - `playerctl` Control audio from hardware buttons (fn keys)
+- `maim` - Better screenshots tool. See `shot.sh` for some helpful scripts
 
 #### Clean up dependencies
 
