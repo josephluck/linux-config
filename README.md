@@ -74,13 +74,16 @@ reboot
 
 ### Useful (but not included tools)
 
+Note that there's keybindings set up for a few of these in the i3 config, but unless you install these packages, they won't work (obvs)
+
 - `cronopete` - Backup manager
 - `pulseaudio` - Audio device manager
-- `playerctl` Control audio from hardware buttons (fn keys)
+- `playerctl` - Control audio from hardware buttons (fn keys)
+- `i3lock-fancy` - Fancy lock screen: `https://github.com/guimeira/i3lock-fancy-multimonitor.git` - `cmd+shift+l` to lock, password to unlock
 
 #### Clean up dependencies
 
 ```bash
-sudo apt-get auto-remove
+sudo apt-get autoremove
 ```
 
