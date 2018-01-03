@@ -91,6 +91,7 @@ Note that there's keybindings set up for a few of these in the i3 config, but un
 * `pulseaudio` - Audio device manager
 * `playerctl` - Control audio from hardware buttons i.e. play, back, forward
 * `i3lock-fancy` - Fancy lock screen: `https://github.com/josephluck/i3lock-fancy-multimonitor` - `cmd+shift+l` to lock, password to unlock
+* `Sqlectron` - Linux SQL gui
 
 #### Clean up dependencies
 
