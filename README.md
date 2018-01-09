@@ -90,7 +90,7 @@ Note that there's keybindings set up for a few of these in the i3 config, but un
 * `cronopete` - Backup manager, you will need to set this up for your drive though
 * `pulseaudio` - Audio device manager
 * `playerctl` - Control audio from hardware buttons i.e. play, back, forward
-* [`i3lock-fancy`](https://github.com/guimeira/i3lock-fancy-multimonitor) - Fancy lock screen - `cmd+shift+l` to lock, password to unlock
+* [`i3lock-fancy`](https://github.com/josephluck/i3-lock) - Fancy lock screen - `cmd+shift+l` to lock, password to unlock, you need to install a few other things, so RTFM
 * `Sqlectron` - Linux SQL gui
 * [`find`](https://github.com/sharkdp/fd) - Better find tool for bash
 
