@@ -87,7 +87,7 @@ reboot
 Note that there's keybindings set up for a few of these in the i3 config, but unless you install these packages, they won't work (obvs)
 
 * [`termite`](https://github.com/thestinger/termite) - A better terminal emulator supporting line wrapping. A config file is specified in this repository. To use it `cd [this directory] && mkdir ~/.config/termite && cp ./termite-config ~/.config/termite/config`. Update i3 config to use `termite` instead of `i3-sensible-terminal` on the `shift+return` keybind
-* `maim` - Screenshot tool. There's a keybinding already set up at `cmd+shift+p` to take a shot a'la OSX. Timestamped images are stored in `~/Pictures`
+* `gnome-screenshot` - if you have installed from ubuntu - you'll have this `super+shift+p` to take a screenie
 * `cronopete` - Backup manager, you will need to set this up for your drive though
 * `pulseaudio` - Audio device manager
 * `playerctl` - Control audio from hardware buttons i.e. play, back, forward
