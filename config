@@ -184,7 +184,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Print screen
-bindsym $mod+Shift+p exec --no-startup-id maim -s ~/Pictures/screen-shot-$(date +%s).png
+bindsym $mod+Shift+p exec --no-startup-id gnome-screenshot -i
 
 # Lock screen
 bindsym $mod+Shift+l exec --no-startup-id ~/.config/i3/i3lock-fancy-multimonitor/lock
